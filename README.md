@@ -14,7 +14,7 @@ TL;DR: insert `{fa ico="heart"}` in your Smarty template to get fa-heart icon.
 * (*bool*) **border** - bordered icon
 * (*str/chr*) **pull** - "l" or "left" for left pull, "r" or "right" for right pull
 * (*int/bool*) **spin** - spin icon (**1=spin, 2=pulse**); if boolean true is provided, then value is 1 (spin)
-* (*int/str)rotate - either integer (90, 180, 270) or **">" for 90°**, **"<" for 270°** and **'u' for 180°**
+* (*int/str*) **rotate** - either integer (90, 180, 270) or **">" for 90°**, **"<" for 270°** and **'u' for 180°**
 * (*str*) **flip** - "v" or **"|" for vertical**, "h" or **"-" for horizontal**
 * (*str*) **class** - additional class (or classed separated by space)
 * (*str*) **title** - HTML title attribute
