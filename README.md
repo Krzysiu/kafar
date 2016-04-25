@@ -1,11 +1,35 @@
-# Krzysiu FA
-Awesome plugin for Smarty for FontAwesome. Yet another? No! Check at the list of parameters! You can use it as well in raw PHP or other templating systems. Even in Wordpress! All you need is simple rewrite. Explaination on the bottom.
+# KAFAR
+## Krzysiu Advanced FontAwesome Renderer
+Awesome **Smarty and Wordpress plugin** that adds advanced support of FontAwesome. Yet another? No! This plugin, in contrast to others, does much more that simple inserting icon. Why it's better?
 
-# Installation
-Copy plugin to `plugins` directory of Smarty. Remember to include FontAwesome CSS in your HTML file.
+1) **It can do (almost) everything that raw FontAwesome can do** - rotating, scaling, animating etc. Yeah, why not? Probably only thing that's missing is stacking. 
+2) **It can do more! KAFAR uses HTML and CSS to make it even better** - the most wanted thing would be **coloring icons** or adding **fixed width spaces** (6 kinds, from 1/1 em 1/6 em!)
+3) **Go! Go! Go** - be faster than anyone else by using unique "go" function - **ready to use schemes** (icon + attributes) like blue info icon or these big quote sign which are placed outside text block
+4) **Do it your way!** - KAFAR is fully customizable - you can add your *own "go" schemes*, HTML ID and classes, **own CSS** and even data-... attributes!
+5) **It's ok that you use Xazufor CMS from planet Zorxoz** - it's easy to adapt it for other CMS-es or even use it as raw PHP function
 
-# Usage
-TL;DR: insert `{fa ico="heart"}` in your Smarty template to get fa-heart icon.
+## Name
+The acronym - KAFAR - means in Polish "pile driver" - a kind of big, big hammer. It's also a colloquial word for very strong person.
+
+## Versions
+
+* [Smarty plugin/shortcode](https://github.com/Krzysiu/kafar/blob/master/Smarty/README.md)
+* [Wordpress shortcode](https://github.com/Krzysiu/kafar/blob/master/Wordpress/README.md)
+* [Raw PHP function](https://github.com/Krzysiu/kafar/blob/master/Raw%20PHP/README.md)
+
+
+## Installation
+Please choose subdirectory of this repository to get informations about installation in specific environment. **Remember to include FontAwesome CSS in your HTML file!**
+
+## Usage
+
+### TL;DR - example source codes
+
+* **Wordpress**: `[fa ico="heart" color="red"]`
+* **Smarty**: `{fa ico="heart" color="red"}`
+* **Raw PHP**: `echo kafar(['ico' => 'heart', 'color' => 'red']);`
+
+### Available parameters
 
 * (*str*) **ico** - icon name
 * (*int*) **scale** - scaling icon, where 0 is no scale
@@ -31,7 +55,9 @@ Boolean type can be:
 * for true: "1", "true", "on" and "yes" or "0"
 * for false: "false", "off", "no", "", NULL or not set
 
-# Examples
+### Usage examples
+
+All examples are shown for Smarty version. E.g. if you would want to use Wordpress version you would have to change `{}` to `[]`.
 
 * `<div style="width:500px">{fa go="outer-quote-start"}Very nice quote!{fa go="outer-quote-end"}</div>` - div container with outter quotation marks. So easy? Yeah!
 * `{fa rspace="2" go="yt"}{fa rspace="2" go="fb"}{fa go="twitter"}` - coloured icons of YT, FB and Twitter with 1/2 em space between it
@@ -45,10 +71,3 @@ In `switch ($params['go'])` part add new line, e.g. `case 'FlipRed': $go = ['fli
 
 Another idea: `case 'toolbar': $go = ['fixed' => true, border => true, class => 'tbBtn', scale => 2]; break;` to create nice preset for toolbar buttons. All you need is to make a nice `.tbBtn` in CSS and choose icons. Then Smarty code would look like `{fa go="toolbar" ico="star" title="Mark object"}{fa go="toolbar" ico="meh-o" title="About author"}{fa go="toolbar" ico="clock-o" title="Set time"}`.
 
-# Usage in raw PHP
-
-    <?
-    include 'function.fa.php'
-    echo smarty_function_fa(['ico' => 'youtube-square', 'color' => '#CC181E'], null);
-
-First parameter is the array of parameters, second doesn't matter, can be `null`.
