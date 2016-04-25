@@ -2,11 +2,17 @@
 ## Krzysiu Advanced FontAwesome Renderer
 Awesome **Smarty and Wordpress plugin** that adds advanced support of FontAwesome. Yet another? No! This plugin, in contrast to others, does much more that simple inserting icon. Why it's better?
 
+
 1) **It can do (almost) everything that raw FontAwesome can do** - rotating, scaling, animating etc. Yeah, why not? Probably only thing that's missing is stacking. 
+
 2) **It can do more! KAFAR uses HTML and CSS to make it even better** - the most wanted thing would be **coloring icons** or adding **fixed width spaces** (6 kinds, from 1/1 em 1/6 em!)
+
 3) **Go! Go! Go** - be faster than anyone else by using unique "go" function - **ready to use schemes** (icon + attributes) like blue info icon or these big quote sign which are placed outside text block
+
 4) **Do it your way!** - KAFAR is fully customizable - you can add your *own "go" schemes*, HTML ID and classes, **own CSS** and even data-... attributes!
+
 5) **It's ok that you use Xazufor CMS from planet Zorxoz** - it's easy to adapt it for other CMS-es or even use it as raw PHP function
+
 
 ## Name
 The acronym - KAFAR - means in Polish "pile driver" - a kind of big, big hammer. It's also a colloquial word for very strong person.
