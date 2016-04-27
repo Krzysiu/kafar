@@ -77,8 +77,7 @@ In `switch ($params['go'])` part add new line, e.g. `case 'FlipRed': $go = ['fli
 
 Another idea: `case 'toolbar': $go = ['fixed' => true, border => true, class => 'tbBtn', scale => 2]; break;` to create nice preset for toolbar buttons. All you need is to make a nice `.tbBtn` in CSS and choose icons. Then Smarty code would look like `{fa go="toolbar" ico="star" title="Mark object"}{fa go="toolbar" ico="meh-o" title="About author"}{fa go="toolbar" ico="clock-o" title="Set time"}`.
 
-
-### Donations
+# Donations
  :blue_heart: | :speech_balloon: | :neckbeard:
 ------------ | ------------- | -----------
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RVJ35VQGHAH6J)<br>         |  Hello! My name is **Krzysztof "Krzysiu" Blachnicki** and I'm Polish developer, amateur photographer and **open source software/content creator** since about 15 years.<br>   I'll be **truly honored with your donation** which can be made by button on the left! **I won't say** "*if you won't donate, I won't code for free anymore*". I will code no matter what, because **I enjoy it**! | [![The author's face](http://krzysiu.net/wp-content/uploads/krzysiu.photo.png)](http://krzysiu.net/wp-content/uploads/krzysiu.photo.full.jpg)<br>       
