@@ -21,10 +21,6 @@ First parameter is the array of parameters.
 		
 This shortcode would show red heart icon.
 
-### Donations
-Donation button | Note about author | :)
------------- | ------------- | -----------
-[![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RVJ35VQGHAH6J) | Hello! My name is **Krzysztof "Krzysiu" Blachnicki** and I'm Polish developer, amateur photographer and **open source software/content creator** since about 15 years.<br>I'll be **truly honored with your donation**! But don't worry, I won't say "*if you won't donate, I won't code for free anymore*". I will code no matter what, because **I enjoy it**! | ![The author's face](http://krzysiu.net/wp-content/uploads/krzysiu.photo.png)
 
 
 
